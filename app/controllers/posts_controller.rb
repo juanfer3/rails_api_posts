@@ -22,6 +22,7 @@ class PostsController < ApplicationController
     end
 
     def update
+        puts "===========entra al editor ========="
         if @post.update(post_params)
           render json: @post
         else
